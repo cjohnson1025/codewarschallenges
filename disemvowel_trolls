@@ -15,3 +15,7 @@ def disemvowel(string):
     s = ""
     s = s.join(removedList)
     return s
+
+# Top solution
+# def disemvowel(s):
+#    return s.translate(None, "aeiouAEIOU")
