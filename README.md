@@ -16,6 +16,8 @@ A digital root is the recursive sum of all the digits in a number. Given n, take
 You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
 
 # 5kyu
+### Human Readable Time (make_readable)
+Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)
 ### Moving Zeros to the End (move_zeros)
 Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
 
