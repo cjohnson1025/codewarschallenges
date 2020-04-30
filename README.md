@@ -4,6 +4,8 @@ Trolls are attacking your comment section! A common way to deal with this situat
 Note: for this kata y isn't considered a vowel.
 ### Exes and Ohs
 Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+### Growth of a Population
+In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
 
 # 6kyu
 ### Digital Root
