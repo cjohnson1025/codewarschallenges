@@ -1,0 +1,14 @@
+# 6kyu // Casey Johnson // April 30th, 2020
+# Write a function that accepts an array of 10 integers (between 0 and 9), 
+# that returns a string of those numbers in the form of a phone number.
+
+def create_phone_number(n):
+    n = [str(char) for char in n]
+    f = ''
+    s = ''
+    t = ''
+    return '('+f.join(n[0:3])+') '+s.join(n[3:6])+'-'+t.join(n[6:])
+    
+# top solution
+#def create_phone_number(n):
+#    return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
