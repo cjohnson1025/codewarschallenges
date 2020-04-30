@@ -8,6 +8,8 @@ Check to see if a string has the same amount of 'x's and 'o's. The method must r
 In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
 
 # 6kyu
+### Create Phone Number (create_phone_number)
+Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 ### Digital Root (digital_root)
 A digital root is the recursive sum of all the digits in a number. Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. This is only applicable to the natural numbers.
 ### Find the Parity Outlier (find_outlier)
