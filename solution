@@ -1,0 +1,50 @@
+# 4kyu // Casey Johnson // July 16th, 2020
+# Complete the solution so that it takes a list of integers in increasing
+# order and returns a correctly formatted string in the range format.
+
+def solution(args):
+    startInt = args[0]
+    endInt = args[0]
+    retString = ""
+    sum = 1
+    for i in range(1, len(args)):
+        if args[i] == startInt + sum:
+            endInt = args[i]
+            sum += 1
+        else:
+            if startInt == endInt:
+                retString = retString + str(startInt) + ','
+            elif endInt - startInt == 1:
+                retString = retString + str(startInt) + ',' + str(endInt) + ','
+            else:
+                retString = retString + str(startInt) + '-' + str(endInt) + ','
+            startInt = args[i]
+            endInt = args[i]
+            sum = 1
+    
+    if startInt == endInt:
+        retString = retString + str(startInt) + ','
+    elif endInt - startInt == 1:
+        retString = retString + str(startInt) + ',' + str(endInt) + ','
+    else:
+        retString = retString + str(startInt) + '-' + str(endInt) + ','
+                
+    return retString[:len(retString)-1]
+   
+# top solution
+# def solution(args):
+#     out = []
+#     beg = end = args[0]
+#     
+#     for n in args[1:] + [""]:        
+#         if n != end + 1:
+#             if end == beg:
+#                 out.append( str(beg) )
+#             elif end == beg + 1:
+#                 out.extend( [str(beg), str(end)] )
+#             else:
+#                 out.append( str(beg) + "-" + str(end) )
+#             beg = n
+#         end = n
+#     
+#     return ",".join(out)
